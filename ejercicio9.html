@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Ejercicio 9: Imágenes y Galería</title>
+</head>
+<body id="ejercicio9">
+    <nav class="barra-navegacion">
+        <!-- Barra de navegación, similar al Ejercicio 7 -->
+    </nav>
+
+    <section id="seccion1">
+        <!-- Contenido de la Sección 1 -->
+        <h2>Mis Pasatiempos</h2>
+        <div class="galeria">
+            <img src="https://portalciudadano.ibarra.gob.ec/PortalCiudadano/_lib/file/doc/informacionGeneral/L4-A-CICLISMO1.png"
+                alt="Pasatiempo 1" class="galeria-imagen" data-src="imagen1.jpg" data-alt="Pasatiempo 1">
+            <img src="https://cronicasfreelancer.com/wp-content/uploads/2019/03/programador.jpg" alt="Pasatiempo 2"
+                class="galeria-imagen" data-src="imagen2.jpg" data-alt="Pasatiempo 2">
+            <img src="https://st.depositphotos.com/1016440/2534/i/950/depositphotos_25344733-stock-photo-sunrise-at-the-beach.jpg" alt="Pasatiempo 3" class="galeria-imagen" onclick="mostrarImagen('imagen3.jpg', 'Pasatiempo 3')">
+        </div>
+    </section>
+
+    <div id="imagenEmergente" class="ventana-emergente">
+        <span id="cerrar" class="cerrar-ventana" onclick="cerrarImagen()">X</span>
+        <img id="imagenCompleta" src="" alt="">
+    </div>
+
+    <script src="galeria.js"></script> <!-- Nombre del archivo JavaScript -->
+    <p><a href="index.html">Regresar al Inicio</a></p>
+</body>
+</html>
